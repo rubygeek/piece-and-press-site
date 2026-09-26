@@ -2,11 +2,11 @@
 
 /* ── Variables ── */
 :root {
-  --purple:     #6B2FA0;
-  --purple-deep:#4A1D6E;
-  --turquoise:  #22B8CF;
-  --turquoise-light: #66D9E8;
-  --magenta:    #E4007C;
+  --purple:     #7B2D8E;
+  --purple-deep:#5B2472;
+  --teal:       #3BC4D4;
+  --teal-light: #6DD8E8;
+  --pink:       #FF4DA6;
   --bg:         #FAFAFA;
   --text:       #2D2D2D;
   --text-light: #6B6B6B;
@@ -51,7 +51,7 @@ body {
   color: var(--purple-deep);
 }
 
-.logo { height: 44px; width: auto; }
+.logo { height: 140px; width: auto; }
 
 .logo-text {
   font-size: 1.5rem;
@@ -69,7 +69,7 @@ body {
   transition: color 0.2s;
 }
 
-.nav a:hover { color: var(--magenta); }
+.nav a:hover { color: var(--pink); }
 
 /* ── Hero ── */
 .hero {
@@ -104,13 +104,13 @@ body {
 }
 
 .btn-primary {
-  background: var(--turquoise);
+  background: var(--teal);
   color: var(--white);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(34, 184, 207, 0.4);
+  box-shadow: 0 6px 20px rgba(59, 196, 212, 0.4);
 }
 
 /* ── Section titles ── */
@@ -150,11 +150,11 @@ body {
 
 .pattern-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(107, 47, 160, 0.15);
+  box-shadow: 0 8px 24px rgba(123, 45, 142, 0.15);
 }
 
 .pattern-placeholder {
-  background: linear-gradient(135deg, var(--turquoise-light), var(--turquoise));
+  background: linear-gradient(135deg, var(--teal-light), var(--teal));
   height: 220px;
   display: flex;
   align-items: center;
@@ -193,7 +193,7 @@ body {
   padding: 28px;
   margin-bottom: 24px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  border-left: 4px solid var(--magenta);
+  border-left: 4px solid var(--pink);
 }
 
 .post-date {
