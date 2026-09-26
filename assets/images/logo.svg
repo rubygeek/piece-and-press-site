@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <!-- Background: rounded rectangle -->
+  <defs>
+    <linearGradient id="purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6B2FA0"/>
+      <stop offset="100%" stop-color="#4A1D6E"/>
+    </linearGradient>
+    <linearGradient id="turq" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22B8CF"/>
+      <stop offset="100%" stop-color="#66D9E8"/>
+    </linearGradient>
+    <clipPath id="circle">
+      <circle cx="50" cy="60" r="35"/>
+    </clipPath>
+  </defs>
+
+  <!-- Circle icon -->
+  <circle cx="50" cy="60" r="35" fill="url(#purple)"/>
+  
+  <!-- Scissors inside circle -->
+  <g clip-path="url(#circle)" transform="translate(50,60)">
+    <!-- Left blade -->
+    <line x1="-10" y1="-15" x2="-25" y2="-35" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    <!-- Right blade -->
+    <line x1="10" y1="-15" x2="25" y2="-35" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    <!-- Handles -->
+    <circle cx="-12" cy="-8" r="6" fill="none" stroke="#22B8CF" stroke-width="2.5"/>
+    <circle cx="12" cy="-8" r="6" fill="none" stroke="#E4007C" stroke-width="2.5"/>
+    <!-- Pivot -->
+    <circle cx="0" cy="0" r="3" fill="white"/>
+    <!-- Fabric line underneath -->
+    <line x1="-30" y1="20" x2="30" y2="20" stroke="white" stroke-width="1.5" opacity="0.6"/>
+    <line x1="-20" y1="28" x2="20" y2="28" stroke="white" stroke-width="1.5" opacity="0.4"/>
+  </g>
+
+  <!-- Text: Piece & Press -->
+  <text x="105" y="62" font-family="Georgia, serif" font-size="34" font-weight="bold" fill="url(#purple)">Piece &amp; Press</text>
+  
+  <!-- Decorative underline -->
+  <line x1="105" y1="76" x2="340" y2="76" stroke="url(#turq)" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Accent dot -->
+  <circle cx="345" cy="76" r="4" fill="#E4007C"/>
+</svg>

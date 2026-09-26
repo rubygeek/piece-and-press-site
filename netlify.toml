@@ -1,0 +1,13 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/assets/*"
+  to = "/assets/:splat"
+  status = 200
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
